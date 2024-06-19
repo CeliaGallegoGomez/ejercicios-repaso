@@ -91,8 +91,8 @@ console.log(longestWordResults);
 
 //- Escribe una función llamada getfirstElement que reciba un array y devuelva la primera posición del array.
 
-const getFirstElement = (this) => {
-    return this[0];
+const getFirstElement = (array) => {
+    return array[0];
 } ;
 
 const getFirstElementResults = getFirstElement ([4,3,2]);
@@ -110,7 +110,7 @@ console.log(arrayElementResults);
 //- Crea una función llamada shortestWord que reciba 2 palabras como parámetro y devuelva la palabra más corta.
 
 const shortestWord = (wordA,wordB) =>{
-    if (wordA < wordB) {
+    if (wordA.length < wordB.length) {
         return wordA
     } else {
         return wordB
@@ -135,7 +135,7 @@ const onlyEven = (numA, numB,numC)=>{
 
 }
 
-onlyEven(2,4,6)
+onlyEven(2,4,5)
 
 //- Crea una función que reciba un número y devuelva su cuadrado y su cubo. El objeto Math tiene el método pow que sirve para calcular potencias, Math.pow(base, exponente)
 
@@ -148,6 +148,26 @@ console.log(getTheSquareResults);
 
 //- Crea una función que reciba una palabra de 5 letras e imprima por consola las 5 letras separadas por comas.
 
+const fiveChars = (word)=>{
+  console.log(`${word.charAt(0)},${word.charAt(1)},${word.charAt(2)},${word.charAt(3)},${word.charAt(4)}`)
+}
 
+fiveChars('maria')
+
+//- Crea una función que reciba un array de 3 números y lo imprima con los números duplicados, por ejemplo, si recibe [1,2,3] deberá imprimir [1,2,3,1,2,3]
+
+const duplicateThem =(array) => {
+  console.log(`${array[0]},${array[1]},${array[2]},${array[0]},${array[1]},${array[2]}`);
+}
+
+duplicateThem ([1,2,3])
+
+//- Crea una función que reciba un array de 5 números y que lo imprima sin el primer y el último valor, por ejemplo, si recibe [1,2,3,4,5] deberá imprimir [2,3,4]
+
+const eliminateThem = (array) => {
+
+}
+
+eliminateThem ([1,2,3,4,5])
 
 
